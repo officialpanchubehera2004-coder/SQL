@@ -1,0 +1,34 @@
+-- SHOW DATABASES
+-- USE cust
+--  CREATE TABLE cust(
+--     ID TINYINT,
+--     NAME VARCHAR(10),
+--     GENDER CHAR(1),
+--     AGE TINYINT,
+--     CITY VARCHAR(10),
+--     DOR DATE
+-- )
+-- INSERT INTO cust VALUES(1,'ARVIND','M',35,'MUM','2020-02-22'),
+-- (2,'SACHIN','M',40,'HYD','2026-06-26'),
+-- (3,'SINDHU','F',25,'BLR','2018-10-15'),
+-- (4,'MANASA','F',25,'HYD','2018-10-14'),
+-- (5,'SIRI','F',23,'BLR','2023-10-28')
+-- SELECT * FROM cust
+-- INSERT INTO cust VALUES(6,'DAVID','M',NULL,'HYD',NULL)
+-- SELECT * FROM cust
+-- INSERT INTO cust(ID,NAME,GENDER,CITY)
+-- VALUES(7,'POOJA','F','ODI')
+-- SELECT * FROM cust
+-- Compound Condition:-
+--  list of customers staying in hyd,blr  ?
+-- SELECT * FROM cust WHERE CITY = 'HYD' OR CITY='BLR'
+-- list of customers staying in hyd   age > 30 ?
+-- SELECT * FROM cust WHERE CITY= 'HYD' AND AGE>30
+-- list of customers whose id = 1,3,5
+-- SELECT * FROM cust WHERE ID = 1 OR ID = 3 OR ID =5 
+-- customers age between 20 and 30 ?
+-- SELECT * FROM cust WHERE AGE>20 AND AGE<30
+-- customers registered in 2020 ?
+-- SELECT * FROM cust WHERE DOR >='2020-01-01' AND DOR<='2020-12-31'
+-- list of customers staying in hyd,mum and age > 30 ?
+-- SELECT * FROM cust WHERE CITY='HYD'OR CITY='BLR'AND AGE>30
