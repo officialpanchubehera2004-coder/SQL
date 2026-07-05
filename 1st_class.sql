@@ -1,0 +1,38 @@
+-- CREATE DATABASE cust
+-- CREATE TABLE cust(
+--     ID TINYINT,
+--     NAME VARCHAR(10),
+--     GENDER CHAR(1),
+--     AGE TINYINT,
+--     CITY VARCHAR(10),
+--     DOR DATE
+-- )
+-- INSERT INTO cust VALUES(1,'ARVIND','M',35,'MUM','2020-02-22'),
+-- (2,'SACHIN','M',40,'HYD','2026-06-26'),
+-- (3,'SINDHU','F',25,'BLR','2018-10-15'),
+-- (4,'MANASA','F',25,'HYD','2018-10-14'),
+-- (5,'SIRI','F',23,'BLR','2023-10-28');
+-- SELECT * FROM cust
+-- INSERT INTO cust VALUES(6,'DAVID','M',NULL,'HYD',NULL)
+-- SELECT * FROM cust
+-- INSERT INTO cust(ID,NAME,GENDER,CITY)
+-- VALUES(7,'POOJA','F','ODI')
+-- SELECT * FROM cust
+-- Display customer names and gender 
+-- SELECT NAME,GENDER FROM cust
+-- Display customer name,age and dor
+-- SELECT NAME,AGE,DOR FROM cust
+-- WHERE clause :-
+-- Display customer details whose id =4
+-- SELECT * FROM cust WHERE ID = 4
+-- display customer details whose name = david
+-- SELECT * FROM cust WHERE NAME = 'DAVID'
+-- display customers age > 30 ?
+-- SELECT * FROM cust  WHERE AGE>30
+-- display customers registered after 2020
+-- SELECT * FROM cust WHERE DOR>'2020-12-31'
+-- display customers registered before 2020 ?
+-- SELECT * FROM cust WHERE DOR<'2020-01-01'
+-- customers who are not staying in hyd ?
+-- SELECT * FROM cust WHERE CITY != 'HYD'
+
