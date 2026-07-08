@@ -1,0 +1,45 @@
+-- SHOW databases
+-- USE cust
+-- SELECT * FROM cust
+-- IN Operator
+-- list of customers whose id = 100,101,103 ?
+-- SELECT * FROM cust WHERE ID IN (1,3,4)
+-- list of customers staying in hyd,blr,mum ?
+-- SELECT * FROM cust WHERE CITY IN ('hyd','blr','mum')
+-- Between Operator
+-- list of customers age between 20 and 30 ?
+-- SELECT * FROM cust WHERE AGE BETWEEN 20 AND 30
+-- customers registered in 2020 ?
+-- SELECT * FROM cust WHERE DOR BETWEEN '2020-01-01' AND '2020-12-31'
+-- who are not registered in 2020 ?
+-- SELECT * FROM cust WHERE DOR NOT BETWEEN '2020-01-01' AND '2020-12-31'
+-- display female customers staying in hyd,blr age between 20 and 30 not registered in 2020 ?
+-- SELECT * FROM cust WHERE GENDER = 'f' AND CITY IN ('hyd','blr','mum',) 
+-- AND AGE BETWEEN 20 AND 30 AND DOR NOT BETWEEN '2020-01-01' AND '2020-12-31'
+-- LIKE Operator
+-- => display customers name starts with  's'  ?
+-- SELECT * FROM cust WHERE NAME LIKE 's%'
+-- customer list name ends with 'd' ?
+-- SELECT * FROM cust WHERE NAME LIKE '%d'
+-- => name contains 'a' ?
+-- SELECT * FROM cust WHERE NAME LIKE '%a%'
+--  => where 'a' is the 4th char in their name ?
+-- SELECT * FROM cust WHERE NAME LIKE '___a%'
+-- => 'a' is the 4th char from last ?
+-- SELECT * FROM cust WHERE NAME LIKE '%a___'
+-- => name starts with vowels ?
+-- SELECT * FROM cust WHERE NAME LIKE '[aeiou]%'
+-- => name starts with consonant ?
+-- SELECT * FROM cust WHERE NAME NOT LIKE '[aeiou]%'
+-- name starts between 'a' and 'p' ?
+-- SELECT * FROM cust WHERE NAME LIKE '[a-p]%'
+-- => customers registered in oct month ?   yyyy-mm-dd
+-- SELECT * FROM cust WHERE DOR LIKE '____-10-%'
+-- SELECT * FROM cust WHERE DOR LIKE '%10%'
+-- SELECT * FROM cust WHERE dor LIKE '%-10-%'
+-- customers registered  in 2020 ?
+-- SELECT * FROM cust WHERE DOR LIKE '2020%'
+
+--  IS  operator :- 
+--  => customers whose age = null ?
+-- SELECT * FROM cust WHERE AGE IS NULL
