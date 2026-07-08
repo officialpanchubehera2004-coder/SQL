@@ -1,0 +1,33 @@
+-- CREATE TABLE student(
+--     SNO INT,
+--     NAME VARCHAR(10),S1 TINYINT,
+--     S2 TINYINT,
+--     S3 TINYINT
+-- )
+-- INSERT INTO student VALUES(1,'DIPU',80,90,70),
+--     (2,'CHIRU',30,60,50),
+--     (3,'KARNA',50,30,20),
+--     (4,'SURYA',10,20,30)
+-- SELECT * FROM student
+-- list of students who are FAILED ?
+-- SELECT * FROM student WHERE S1<35 OR S2<35 OR S3 <35  
+-- list of students who are passed ?
+-- SELECT * FROM student WHERE S1>=35 AND S2>=35 AND S3>=35
+-- list of students who are failed in exactly 1 subject ?
+-- SELECT * FROM student WHERE(s1<35 AND s2>=35 AND s3>=35)
+--                       OR
+--                      ( s1>=35 AND s2<35 AND s3>=35)
+--                       OR
+--                      ( s1>=35 AND s2>=35 AND s3<35)
+-- students who are failed exactly in 2 subjects ?
+-- SELECT * FROM student WHERE (s1>=35 AND s2<35 AND s3<35)
+--                    OR
+--                     (s1<35 AND s2>=35 AND s3<35)
+--                    OR
+--                     (s1<35 AND s2<35 AND s3>=35)
+--  who are failed in all 3 subjects ?
+-- SELECT * FROM student WHERE s1<35 AND s2<35 AND s3<35
+-- SELECT * FROM student
+
+
+
